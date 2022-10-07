@@ -18,14 +18,14 @@ interface UsersApi {
 
          const val BASE_URL = "https://dummyapi.io/data/v1/"
 
-        operator fun invoke(): UsersApi {
+       /* operator fun invoke(): UsersApi {
             return Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .client(getRetrofitClient())
                 .addConverterFactory(MoshiConverterFactory.create())
                 .build()
                 .create(UsersApi::class.java)
-        }
+        }*/
 
         private fun getRetrofitClient(): OkHttpClient {
             return OkHttpClient.Builder()
