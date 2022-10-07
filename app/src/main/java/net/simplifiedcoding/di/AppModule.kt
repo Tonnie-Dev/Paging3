@@ -5,8 +5,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import net.simplifiedcoding.data.network.UsersApi
-import net.repository.UserRepository
-import net.repository.UserRepositoryImpl
+
 
 @InstallIn(SingletonComponent::class)
 @Module
