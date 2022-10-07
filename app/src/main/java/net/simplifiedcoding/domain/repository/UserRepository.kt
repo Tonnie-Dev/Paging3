@@ -1,6 +1,6 @@
 package net.simplifiedcoding.domain.repository
 
-import net.simplifiedcoding.data.network.UsersResponse
+import net.simplifiedcoding.data.remote.UsersResponse
 
 interface UserRepository {
 

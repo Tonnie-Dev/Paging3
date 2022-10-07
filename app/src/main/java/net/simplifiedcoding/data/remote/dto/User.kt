@@ -1,4 +1,4 @@
-package net.simplifiedcoding.data.network
+package net.simplifiedcoding.data.remote.dto
 
 
 import com.squareup.moshi.Json

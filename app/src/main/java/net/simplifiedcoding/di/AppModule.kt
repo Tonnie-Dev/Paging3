@@ -4,7 +4,11 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import net.simplifiedcoding.data.network.UsersApi
+import net.simplifiedcoding.data.remote.UsersApi
+import okhttp3.OkHttpClient
+import retrofit2.Retrofit
+import retrofit2.create
+import javax.inject.Singleton
 
 
 @InstallIn(SingletonComponent::class)
@@ -12,9 +16,18 @@ import net.simplifiedcoding.data.network.UsersApi
 object AppModule {
 
     @Provides
-    fun provideUsersApi(): UsersApi = UsersApi()
+    @Singleton
+    fun provideUsersAPI(okHttpClient: OkHttpClient): UsersApi {
 
-    @Provides
-    fun provideUserRepository(api: UsersApi): net.repository.UserRepository =
-        net.repository.UserRepositoryImpl(api)
+        val moshi =
+
+        return Retrofit.Builder()
+                .baseUrl(UsersApi.BASE_URL)
+                .addConverterFactory()
+                .client(okHttpClient)
+                .build()
+                .create()
+    }
+
+
 }

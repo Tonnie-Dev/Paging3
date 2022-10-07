@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import net.simplifiedcoding.R
-import net.simplifiedcoding.data.network.User
+import net.simplifiedcoding.data.remote.dto.User
 
 
 @Composable

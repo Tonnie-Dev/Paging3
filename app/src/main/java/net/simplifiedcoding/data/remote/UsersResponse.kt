@@ -1,7 +1,8 @@
-package net.simplifiedcoding.data.network
+package net.simplifiedcoding.data.remote
 
 
 import com.squareup.moshi.Json
+import net.simplifiedcoding.data.remote.dto.User
 
 
 data class UsersResponse(

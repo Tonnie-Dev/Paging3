@@ -1,4 +1,4 @@
-package net.simplifiedcoding.data.network
+package net.simplifiedcoding.data.remote
 
 import net.simplifiedcoding.BuildConfig
 import okhttp3.OkHttpClient
@@ -16,7 +16,7 @@ interface UsersApi {
 
     companion object {
 
-        private const val BASE_URL = "https://dummyapi.io/data/v1/"
+         const val BASE_URL = "https://dummyapi.io/data/v1/"
 
         operator fun invoke(): UsersApi {
             return Retrofit.Builder()
