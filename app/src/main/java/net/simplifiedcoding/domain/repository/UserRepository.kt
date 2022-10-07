@@ -1,4 +1,4 @@
-package net.simplifiedcoding.data.repository
+package net.simplifiedcoding.domain.repository
 
 import net.simplifiedcoding.data.network.UsersResponse
 
