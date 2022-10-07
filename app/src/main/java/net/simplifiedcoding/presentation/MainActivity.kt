@@ -1,4 +1,4 @@
-package net.simplifiedcoding
+package net.simplifiedcoding.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,8 +9,8 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import dagger.hilt.android.AndroidEntryPoint
-import net.simplifiedcoding.ui.MainViewModel
-import net.simplifiedcoding.ui.theme.PagingSampleTheme
+import net.simplifiedcoding.presentation.ui.MainViewModel
+import net.simplifiedcoding.presentation.ui.theme.PagingSampleTheme
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

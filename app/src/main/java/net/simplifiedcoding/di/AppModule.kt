@@ -1,4 +1,4 @@
-package net.simplifiedcoding.data.di
+package net.simplifiedcoding.di
 
 import dagger.Module
 import dagger.Provides

@@ -1,4 +1,4 @@
-package net.simplifiedcoding.ui.theme
+package net.simplifiedcoding.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
