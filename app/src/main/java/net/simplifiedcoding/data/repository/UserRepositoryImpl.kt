@@ -1,7 +1,7 @@
 package net.simplifiedcoding.data.repository
 
 import net.simplifiedcoding.data.remote.UsersApi
-import net.simplifiedcoding.data.remote.UsersResponse
+import net.simplifiedcoding.data.remote.dto.UsersResponse
 import net.simplifiedcoding.domain.repository.UserRepository
 import javax.inject.Inject
 

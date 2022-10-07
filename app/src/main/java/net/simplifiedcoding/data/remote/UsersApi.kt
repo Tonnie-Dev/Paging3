@@ -1,10 +1,6 @@
 package net.simplifiedcoding.data.remote
 
-import net.simplifiedcoding.BuildConfig
-import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
-import retrofit2.Retrofit
-import retrofit2.converter.moshi.MoshiConverterFactory
+import net.simplifiedcoding.data.remote.dto.UsersResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -16,7 +12,7 @@ interface UsersApi {
 
     companion object {
 
-         const val BASE_URL = "https://dummyapi.io/data/v1/"
+         const val BASE_URL = "https://dummyapi.io/data/v1/user"
 
        /* operator fun invoke(): UsersApi {
             return Retrofit.Builder()
@@ -25,7 +21,7 @@ interface UsersApi {
                 .addConverterFactory(MoshiConverterFactory.create())
                 .build()
                 .create(UsersApi::class.java)
-        }*/
+        }
 
         private fun getRetrofitClient(): OkHttpClient {
             return OkHttpClient.Builder()
@@ -41,7 +37,7 @@ interface UsersApi {
                         client.addInterceptor(logging)
                     }
                 }.build()
-        }
+        }*/
     }
 
 }
