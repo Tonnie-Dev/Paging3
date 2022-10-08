@@ -3,7 +3,7 @@ package net.simplifiedcoding.data.remote.dto
 
 import com.squareup.moshi.Json
 
-data class User(
+data class UserDTO(
     @field:Json(name = "firstName")
     val firstName: String,
     @field:Json(name = "id")
