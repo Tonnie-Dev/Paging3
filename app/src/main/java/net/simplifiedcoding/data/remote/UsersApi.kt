@@ -1,13 +1,13 @@
 package net.simplifiedcoding.data.remote
 
-import net.simplifiedcoding.data.remote.dto.UsersResponse
+import net.simplifiedcoding.data.remote.dto.UsersResponseDTO
 import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface UsersApi {
 
     @GET("user")
-    suspend fun getUsers(@Query("page") page: Int, @Query("limit") limit: Int): UsersResponse
+    suspend fun getUsers(@Query("page") page: Int, @Query("limit") limit: Int): UsersResponseDTO
 
 
     companion object {

@@ -15,7 +15,6 @@ fun UsersResponseDTO.toModel(): UsersResponse {
     )
 }
 
-
 fun UserDTO.toModel(): User {
 
     return User(
