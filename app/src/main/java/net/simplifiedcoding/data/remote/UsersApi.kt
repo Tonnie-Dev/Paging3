@@ -12,7 +12,7 @@ interface UsersApi {
 
     companion object {
 
-         const val BASE_URL = "https://dummyapi.io/data/v1/user"
+         const val BASE_URL = "https://dummyapi.io/data/v1/user/"
 
        /* operator fun invoke(): UsersApi {
             return Retrofit.Builder()

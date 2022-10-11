@@ -10,6 +10,7 @@ import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import dagger.hilt.android.AndroidEntryPoint
 import net.simplifiedcoding.presentation.screens.MainViewModel
+import net.simplifiedcoding.presentation.screens.UsersScreen
 import net.simplifiedcoding.presentation.ui.theme.PagingSampleTheme
 
 @AndroidEntryPoint
@@ -23,10 +24,10 @@ class MainActivity : ComponentActivity() {
             PagingSampleTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
+                        modifier = Modifier.fillMaxSize(),
+                        color = MaterialTheme.colors.background
                 ) {
-
+                    UsersScreen()
                 }
             }
         }

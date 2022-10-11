@@ -9,6 +9,7 @@ import androidx.paging.LoadState
 import androidx.paging.compose.collectAsLazyPagingItems
 import androidx.paging.compose.items
 import net.simplifiedcoding.presentation.screens.components.ErrorItem
+import net.simplifiedcoding.presentation.screens.components.LoadingItem
 import net.simplifiedcoding.presentation.ui.UserCard
 
 
