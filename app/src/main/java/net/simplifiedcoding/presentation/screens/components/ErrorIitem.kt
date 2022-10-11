@@ -35,7 +35,7 @@ fun ErrorItem(message: String) {
                         .padding(8.dp)
         ) {
 
-          
+
             Image(
                     modifier = Modifier
                             .clip(CircleShape)
