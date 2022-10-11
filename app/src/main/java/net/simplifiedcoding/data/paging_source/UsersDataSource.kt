@@ -5,6 +5,7 @@ import androidx.paging.PagingState
 import net.simplifiedcoding.domain.model.User
 import net.simplifiedcoding.domain.repository.UserRepository
 import net.simplifiedcoding.util.PAGE_ITEMS_LIMIT
+import timber.log.Timber
 
 
 class UsersDataSource(private val repository: UserRepository) : PagingSource<Int, User>() {
@@ -45,8 +46,10 @@ class UsersDataSource(private val repository: UserRepository) : PagingSource<Int
 
                     )
         } catch (e: Exception) {
-
+            Timber.i("Error Caught in load() - $e")
             LoadResult.Error(e)
+
+
 
         }
     }
