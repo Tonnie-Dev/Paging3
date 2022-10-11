@@ -6,12 +6,12 @@ import net.simplifiedcoding.domain.model.User
 
 
 data class UsersResponseDTO(
-    @field:Json(name = "data")
+    @Json(name = "data")
     val users: List<User>,
-    @field:Json(name = "limit")
+    @Json(name = "limit")
     val limit: Int,
-    @field:Json(name = "page")
+    @Json(name = "page")
     val page: Int,
-    @field:Json(name = "total")
+    @Json(name = "total")
     val total: Int
 )
