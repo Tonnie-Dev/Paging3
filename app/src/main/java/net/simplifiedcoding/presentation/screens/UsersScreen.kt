@@ -16,6 +16,7 @@ import net.simplifiedcoding.presentation.ui.UserCard
 @Composable
 fun UsersScreen(viewModel: MainViewModel = hiltViewModel()) {
 
+    //LazyPagingItems - class responsible for accessing the data from a Flow of PagingData
     val users = viewModel.pager.collectAsLazyPagingItems()
 
     LazyColumn(contentPadding = PaddingValues(16.dp),

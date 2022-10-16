@@ -46,7 +46,7 @@ class UsersDataSource(private val repository: UserRepository) : PagingSource<Int
 
                     )
         } catch (e: Exception) {
-            Timber.i("Error Caught in load() - $e")
+
             LoadResult.Error(e)
 
 
